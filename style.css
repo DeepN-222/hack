@@ -1,0 +1,433 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+    background: #eddacb;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav .nav-link {
+    color: #064e3b;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+.navbar-nav .nav-link:hover {
+    color: #10b981;
+}
+/* Dropdown */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+}
+.dropdown-item:hover {
+    background: #d1fae5;
+    color: #064e3b;
+}
+
+.logo {
+width: 140px; /* Adjust as needed */
+height: auto;
+}
+
+/* Carousel Image Size */
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    padding: 20px 40px;
+    border-radius: 80px;
+}
+
+/* Parallax Hero Section */
+.parallax {
+    background-image: url('architecture.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Sections */
+.section {
+    padding: 50px;
+    text-align: center;
+    background: white;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 30%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.1);
+}
+
+/* Team Section */
+.team-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Testimonials */
+.testimonial {
+    font-style: italic;
+}
+
+/* Contact Form */
+/* Contact Section Styles */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://media.istockphoto.com/id/823322674/photo/male-architect-hands-making-model-house.jpg?s=612x612&w=0&k=20&c=0NwNPlPRYu2OZNE03HQ1bHQIrzEMcssGB6Ne6E6i9VI=')center center/cover no-repeat;
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 2rem;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: white;
+}
+
+.hero-content p {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #e0e0e0;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #033c2f !important;
+    color: white !important;
+    border: none;
+}
+
+.primary:hover {
+    background-color: #021e17 !important;
+}
+
+.secondary {
+    border: 2px solid white !important;
+    color: white !important;
+    background: transparent;
+}
+
+.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+/*team section*/
+/* Team Section Styling */
+/* Team Section Styling */
+.team-section {
+    background-color: #EDDACB;
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #064e3b;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.phrase {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Flexbox Grid for Team Members */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+/* Team Member Card */
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideUp 1s ease-in-out;
+    cursor: pointer;
+}
+
+/* Animation Delay for Each Card */
+.team-member:nth-child(1) { animation-delay: 0.2s; }
+.team-member:nth-child(2) { animation-delay: 0.4s; }
+.team-member:nth-child(3) { animation-delay: 0.6s; }
+.team-member:nth-child(4) { animation-delay: 0.8s; }
+
+/* Image Styling - No Size Change on Hover */
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: border 0.3s ease;
+}
+
+/* Hover Effect - Pop-up Card */
+.team-member:hover {
+    transform: translateY(-10px) scale(1.05); /* Card pops up and slightly enlarges */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Hover Border */
+.team-member:hover img {
+    border: 4px solid #064e3b; /* Border appears around image */
+}
+
+/* Role & Bio */
+.role {
+    font-weight: bold;
+    color: #064e3b;
+    margin-top: 10px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.testimonial {
+    width: 45%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+
+/* Zig-Zag Layout */
+.testimonial:nth-child(odd) {
+    flex-direction: row;
+}
+
+.testimonial:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Testimonial Content */
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial p {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial span {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Hover Effect - Expand & Blur Others */
+.testimonial:hover {
+    transform: scale(1.08); /* Slight push forward */
+    max-width: 50%; /* Expands smoothly instead of sudden width jump */
+    height: 220px; /* Increases height */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* Blur effect on other testimonials */
+.testimonial-container:hover .testimonial:not(:hover) {
+    filter: blur(3px);
+    opacity: 0.6;
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Image Scale on Hover */
+.testimonial:hover img {
+    transform: scale(1.5);
+}
+
+/*footer*/
+/* Footer Carousel Styling */
+/* Footer Carousel Styling */
+.footer-carousel-container {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.footer-carousel-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.footer-carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between the two tracks */
+}
+
+.footer-carousel {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+/* Increased size of images */
+.footer-carousel img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left-to-right scrolling */
+.track-a {
+    animation: scroll-left-footer 15s linear infinite;
+}
+
+/* Right-to-left scrolling */
+.track-b {
+    animation: scroll-right-footer 15s linear infinite;
+}
+
+/* Left scrolling animation */
+@keyframes scroll-left-footer {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Right scrolling animation */
+@keyframes scroll-right-footer {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALO Architect</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body class="min-h-screen bg-gray-100 text-gray-900 font-sans">
+    <!-- Nav Section -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="homeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="#">Homepage</a></li>
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Service</a></li>
+                            <li><a class="dropdown-item" href="#">Review</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                            <li><a class="dropdown-item" href="#">Project Details</a></li>
+                            <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            <li><a class="dropdown-item" href="#">Career</a></li>
+                            <li><a class="dropdown-item" href="#">Terms</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="#">Styleguide</a></li>
+                            <li><a class="dropdown-item" href="#">Changelog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <a class="navbar-brand mx-auto text-green-900 text-3xl font-bold" href="#">
+                <img src="./images/logo.png" alt="Logo" class="logo d-inline-block align-text-top me-2">
+            </a>
+            <a href="#" class="btn btn-success bg-green-900 text-white px-5 py-3 rounded-pill shadow text-lg">Get in touch</a>
+        </div>
+    </nav>
+
+    <!-- Image Carousel -->
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/slider 1.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slider 2.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slider 3.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="parallax">
+        <h2>Innovate,Illuminate,Halo Create</h2>
+        <p>Modern. Sustainable. Luxury Architecture.</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>At HALO Architect, we specialize in creating modern and sustainable architectural designs that blend innovation with functionality.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" style="background-image: url('project1.jpg');"></div>
+            <div class="portfolio-item" style="background-image: url('project2.jpg');"></div>
+            <div class="portfolio-item" style="background-image: url('project3.jpg');"></div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <!-- Team Section -->
+     <section id="team" class="section">
+<section class="team-section">
+    <h2>Meet Our Team</h2>
+    <p class="phrase">"Designing spaces that inspire, engineering dreams into reality."</p>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="./images/team1.jpg" alt="Aarav Mehta">
+            <h3>Aarav Mehta</h3>
+            <p class="role">Lead Architect</p>
+            <p class="bio">"Passionate about blending aesthetics with functionality. I believe architecture is the poetry of space."</p>
+        </div>
+        <div class="team-member">
+            <img src="./images/team2.jpg" alt="Riya Kapoor">
+            <h3>Riya Kapoor</h3>
+            <p class="role">Interior Designer</p>
+            <p class="bio">"Every space tells a story. My job is to make sure it's a masterpiece."</p>
+        </div>
+        <div class="team-member">
+            <img src="./images/team3.jpeg" alt="Kabir Verma">
+            <h3>Kabir Verma</h3>
+            <p class="role">Structural Engineer</p>
+            <p class="bio">"Strong foundations, elegant designs. Engineering is the silent art behind great architecture."</p>
+        </div>
+        <div class="team-member">
+            <img src="./images/team4.jpg" alt="Ananya Iyer">
+            <h3>Ananya Iyer</h3>
+            <p class="role">Project Manager</p>
+            <p class="bio">"I bring visions to life by turning blueprints into reality. Precision and efficiency are my tools."</p>
+        </div>
+    </div>
+</section>
+</section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="./images/test1.jpg" alt="Client A">
+                <div>
+                    <p>"HALO Architect transformed our vision into reality with an amazing design!"</p>
+                    <span>- Client A</span>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <img src="./images/test2.jpg" alt="Client B">
+                <div>
+                    <p>"The attention to detail and professionalism were outstanding."</p>
+                    <span>- Client B</span>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <img src="https://via.placeholder.com/80" alt="Client C">
+                <div>
+                    <p>"We are thrilled with the results! The design perfectly matched our expectations."</p>
+                    <span>- Client C</span>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <img src="jwwob" alt="Client D">
+                <div>
+                    <p>"A seamless process from start to finish. Highly recommend HALO Architect!"</p>
+                    <span>- Client D</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+        <div id="contact" class="section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Unlock Your Dream <br> Home Today!</h1>
+                    <p>We encourage clients to actively participate in discussions, 
+                       share their ideas, preferences, and feedback.</p>
+                    <div class="buttons">
+                        <a href="#" class="btn primary">Get in touch →</a>
+                        <a href="tel:+1483944954" class="btn secondary">Call us: 9876543210</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Opposite Direction Carousel -->
+        <!-- Footer Opposite Direction Carousel -->
+        <div class="footer-carousel-container">
+            <h2 class="footer-carousel-title">Follow us to view our latest projects</h2>
+            <div class="footer-carousel-wrapper">
+                <div class="footer-carousel track-a">
+                    <img src="./images/image1.jpg" alt="Image 1">
+                    <img src="./images/image2.png" alt="Image 2">
+                    <img src="./images/image3.jpg" alt="Image 3">
+                    <img src="./images/image4.jpg" alt="Image 4">
+                    <img src="./images/image5.jpg" alt="Image 5">
+                </div>
+                <div class="footer-carousel track-b">
+                    <img src="./images/image6.jpeg.jpg" alt="Image 6">
+                    <img src="./images/image7.webp" alt="Image 7">
+                    <img src="./images/image8.jpeg.jpg" alt="Image 8">
+                    <img src="./images/image9.jpeg.jpg" alt="Image 9">
+                    <img src="./images/image10.webp" alt="Image 10">
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
